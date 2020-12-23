@@ -7,15 +7,13 @@ services:
       DB_DATABASE: admin
       DB_USERNAME: root
       DB_PASSWORD: root
-      CHECKOUT_URL: http://localhost:3002
     ports:
       - 8000:8000
     depends_on:
       - db
 
   db:
-    image: mysql:5.7.22
-    restart: always
+    image: mysql:8.0.22
     environment:
       MYSQL_DATABASE: admin
       MYSQL_USER: root
@@ -23,5 +21,30 @@ services:
       MYSQL_ROOT_PASSWORD: root
     volumes:
       - .dbdata:/var/lib/mysql
-    ports:
-      - 33066:3306
+#       version: "3.7"
+# services:
+#   backend:
+#     image: antoniopapa1991/admin-backend
+#     environment:
+#       DB_HOST: db
+#       DB_DATABASE: admin
+#       DB_USERNAME: root
+#       DB_PASSWORD: root
+#       CHECKOUT_URL: http://localhost:3002
+#     ports:
+#       - 8000:8000
+#     depends_on:
+#       - db
+
+#   db:
+#     image: mysql:5.7.22
+#     restart: always
+#     environment:
+#       MYSQL_DATABASE: admin
+#       MYSQL_USER: root
+#       MYSQL_PASSWORD: root
+#       MYSQL_ROOT_PASSWORD: root
+#     volumes:
+#       - .dbdata:/var/lib/mysql
+#     ports:
+#       - 33066:3306
