@@ -1,3 +1,3 @@
 These are the instructions
 
-https://wwww.seanmodd.github.io
+[The Official Sean Modd GitHub Page!](http://seanmodd.github.io)
