@@ -3,7 +3,7 @@ import Wrapper from "../Wrapper";
 import axios from 'axios';
 import {Link} from "react-router-dom";
 import {Order} from "../../classes/order";
-import Paginator from "../../components/Paginator";
+import Paginator from "../components/Paginator";
 
 class Orders extends Component {
     state = {

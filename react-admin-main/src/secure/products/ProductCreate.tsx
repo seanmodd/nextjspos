@@ -2,7 +2,7 @@ import React, {Component, SyntheticEvent} from 'react';
 import Wrapper from "../Wrapper";
 import axios from 'axios';
 import {Redirect} from 'react-router-dom';
-import ImageUpload from "../../components/ImageUpload";
+import ImageUpload from "../components/ImageUpload";
 
 class ProductCreate extends Component {
     state = {

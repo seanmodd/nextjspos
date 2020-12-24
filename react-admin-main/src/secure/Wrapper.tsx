@@ -1,6 +1,6 @@
 import React, {Component, Dispatch, PropsWithChildren} from 'react';
-import Nav from "../components/Nav";
-import Menu from "../components/Menu";
+import Nav from "./components/Nav";
+import Menu from "./components/Menu";
 import axios from 'axios';
 import {Redirect} from 'react-router-dom';
 import {connect} from "react-redux";
