@@ -5,9 +5,28 @@ import Dashboard from './Dashboard';
 import Users from './Users';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Menu from './components/Menu';
+import axios from 'axios';
+import { Redirect } from 'react-router-dom';
 
 class Wrapper extends Component {
+  state = {
+    redirect: false,
+  };
+  componentDidMount = async () => {
+    try {
+      const response = await axios.get(`${axios.defaults.baseURL}user`);
+      console.log(response);
+    } catch (e) {
+      this.setState({
+        redirect: true,
+      });
+    }
+  };
   render() {
+    if (this.state.redirect) {
+      return <Redirect to={'/login'} />;
+    }
+
     return (
       <>
         <Nav />
