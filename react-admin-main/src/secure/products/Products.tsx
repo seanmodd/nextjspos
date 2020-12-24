@@ -3,8 +3,8 @@ import Wrapper from "../Wrapper";
 import {Link} from "react-router-dom";
 import axios from 'axios';
 import {Product} from "../../classes/product";
-import Paginator from "../components/Paginator";
-import Deleter from "../components/Deleter";
+import Paginator from "../../components/Paginator";
+import Deleter from "../../components/Deleter";
 import {connect} from "react-redux";
 import {User} from "../../classes/user";
 

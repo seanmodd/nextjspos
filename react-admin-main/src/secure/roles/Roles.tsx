@@ -3,7 +3,7 @@ import Wrapper from "../Wrapper";
 import axios from 'axios';
 import {Role} from "../../classes/role";
 import {Link} from "react-router-dom";
-import Deleter from "../components/Deleter";
+import Deleter from "../../components/Deleter";
 
 class Roles extends Component {
     state = {
