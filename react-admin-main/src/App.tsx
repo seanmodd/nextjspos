@@ -132,13 +132,13 @@ function App() {
               <td>ipsum</td>
               <td>dolor</td>
               <td>sit</td>
-            {/* </tr>
+            </tr>
             </tbody>
             </table>
             </div>
             </main>
             </div>
-            </div> */}
+            </div>
             </div>
     );
 }
