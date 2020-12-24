@@ -1,4 +1,4 @@
-# Welcome to the React-Next.js POS Web App Repo
+# Welcome to the Repo for the POS Web App built on React and Next.js!
 
 
 [__The Official Sean Modd GitHub Page!__](http://seanmodd.github.io)
