@@ -14,6 +14,7 @@ class Users extends Component {
   };
   componentDidMount = async () => {
     const response = await axios.get('users');
+    //here this is covered in lecture 13 titled Users, the axios is actually axios.get(url: 'users'); however that is creating a parse error somehow so i just left it like axios.get('users'); instead of the way he did it... I think this is also messing me up. find out why we are doing this!!! understand axios better!
     console.log(response);
   };
 
