@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Dashboard from './secure/Dashboard';
-import Users from './secure/Users';
+import Users from './secure/users/Users';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Login from './public/Login';
 import Register from './public/Register';
@@ -15,6 +15,7 @@ function App() {
         <Route path={'/users'} component={Users} />
         <Route path={'/login'} component={Login} />
         <Route path={'/register'} component={Register} />
+ 
       </BrowserRouter>
     </div>
   );

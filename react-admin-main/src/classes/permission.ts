@@ -1,9 +1,9 @@
 export class Permission {
-    id: number;
-    name: string;
+  id: number;
+  name: string;
 
-    constructor(id = 0, name = '') {
-        this.id = id;
-        this.name = name;
-    }
+  constructor(id: number = 0, name: string = '') {
+    this.id = id;
+    this.name = name;
+  }
 }

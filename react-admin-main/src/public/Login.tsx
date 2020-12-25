@@ -13,7 +13,7 @@ class Login extends Component {
   submit = async (e: SyntheticEvent) => {
     e.preventDefault();
 
-    const response = await axios.post(`${axios.defaults.baseURL}login`, {
+    const response = await axios.post('login', {
       email: this.email,
       password: this.password,
       scope: 'admin',

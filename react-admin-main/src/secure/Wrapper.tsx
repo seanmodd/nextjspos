@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Login from '../public/Login';
 import Nav from './components/Nav';
 import Dashboard from './Dashboard';
-import Users from './Users';
+import Users from './users/Users';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Menu from './components/Menu';
 import axios from 'axios';
@@ -14,7 +14,7 @@ class Wrapper extends Component {
   };
   componentDidMount = async () => {
     try {
-      const response = await axios.get(`${axios.defaults.baseURL}user`);
+      const response = await axios.get('user');
       console.log(response);
     } catch (e) {
       this.setState({
